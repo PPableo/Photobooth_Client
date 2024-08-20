@@ -13,7 +13,7 @@ const Landing = () => {
           <div className="lg:w-2/3 text-center mx-auto">
             <h1 className="text-gray-900 light:text-white font-extra text-5xl md:text-6xl xl:text-7xl">
               PhotoHaus{" "}
-              <span className="text-primary light:text-white">.to</span>
+              <span className="text-primary light:text-white">.TO</span>
             </h1>
             <p className="mt-8 text-gray-700 light:text-gray-300 text-xl">
               A modern photobooth{" "}
@@ -26,7 +26,7 @@ const Landing = () => {
             </p>
             <div className="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
               <a
-                href="#features"
+                href="https://www.instagram.com/photohaus.to/"
                 className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
               >
                 <span className="relative text-base font-semibold text-white">
@@ -34,7 +34,7 @@ const Landing = () => {
                 </span>
               </a>
               <a
-                href="#features"
+                href="#faqs"
                 className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 light:before:border-gray-700 light:before:bg-gray-800 sm:w-max"
               >
                 <span className="relative text-base font-semibold text-primary light:text-white">

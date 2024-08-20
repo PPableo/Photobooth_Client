@@ -34,7 +34,7 @@ const Footer = () => {
               <ul role="list" className="space-y-6">
                 <li>
                   <a
-                    href="https://github.com/PPableo/mpdmvf-app"
+                    href="https://github.com/PPableo"
                     className="flex items-center space-x-3 transition hover:text-primary"
                   >
                     <svg
@@ -115,7 +115,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/photohaus.to/"
                     className="flex items-center space-x-3 transition hover:text-primary"
                   >
                     <svg
@@ -133,11 +133,11 @@ const Footer = () => {
             </div>
             <div className="m-auto mt-16 w-10/12 space-y-6 text-center sm:mt-auto sm:w-5/12 sm:text-left">
               <span className="block text-gray-500 dark:text-gray-400">
-                Subjective Tools and Analysis Software
+                A modern photobooth
               </span>
 
               <span className="block text-gray-500 dark:text-gray-400">
-                Paul Pableo &copy; <span id="year"></span>
+                PHOTOHAUS.TO &copy; <span id="year"></span>
               </span>
 
               <span className="flex justify-between text-gray-600 dark:text-white">
@@ -153,7 +153,7 @@ const Footer = () => {
               <span className="block text-gray-500 dark:text-gray-400">
                 Need help?{" "}
                 <a
-                  href="#"
+                  href="https://www.instagram.com/photohaus.to/"
                   className="font-semibold text-gray-600 dark:text-white"
                 >
                   {" "}

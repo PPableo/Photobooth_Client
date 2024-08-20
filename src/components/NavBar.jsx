@@ -135,11 +135,11 @@ const Navbar = () => {
                   ))}
                   <li>
                     <a
-                      href="https://ppableo.github.io/"
+                      href="#faqs"
                       target="_blank"
                       className="flex gap-2 font-semibold text-gray-700 transition hover:text-primary light:text-white light:hover:text-white md:px-4"
                     >
-                      <span>Donate For More</span>
+                      <span>Packages</span>
                       <span className="flex rounded-full bg-primary/20 px-1.5 py-0.5 text-xs tracking-wider text-purple-700 light:bg-white/10 light:text-orange-300">
                         new
                       </span>

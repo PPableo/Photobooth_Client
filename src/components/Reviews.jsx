@@ -1,5 +1,5 @@
 import Container from "./Container";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Reviews = () => {
   return (

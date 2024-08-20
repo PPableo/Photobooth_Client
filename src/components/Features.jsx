@@ -1,14 +1,14 @@
 import Container from "./Container";
 import Accordion from "./Accordian";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Features = () => {
   return (
     <Container>
-              <div className="mt-20 space-y-4 px-6 md:px-0">
-          <h2 className="text-left text-2xl font-light text-gray-800 light:text-white md:text-4xl">
+          <h2 className="text-left text-2xl font-light text-gray-800 light:text-white md:text-4xl" id="faqs">
             Corporate, Parties, Weddings<span className="text-primary"> Captured.</span>
           </h2>
+              <div className="mt-20 space-y-4 px-6 md:px-0">
         </div>
       <div id="features" className="my-20">
         <div className="p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
@@ -38,7 +38,7 @@ Renting a photo booth adds entertainment value to your event, provides guests wi
             answer={
               <div>
                 <p className="mb-4">
-                To book a photo booth, you typically need to contact the service provider directly. Some companies require a deposit to secure the booking and may have an online reservation system.</p>
+                Book Here Via Calender or Contact Us @ Here and @ Here</p>
               </div>
             }
           />
