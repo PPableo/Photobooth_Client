@@ -11,7 +11,7 @@ const Landing = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
         <div className="relative pt-36 ml-auto">
           <div className="lg:w-2/3 text-center mx-auto">
-            <h1 className="text-gray-900 light:text-white font-extralight text-5xl md:text-6xl xl:text-7xl">
+            <h1 className="text-gray-900 light:text-white font-extra text-5xl md:text-6xl xl:text-7xl">
               PhotoHaus{" "}
               <span className="text-primary light:text-white">.to</span>
             </h1>
@@ -30,7 +30,7 @@ const Landing = () => {
                 className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
               >
                 <span className="relative text-base font-semibold text-white">
-                  Get started
+                  Book Now
                 </span>
               </a>
               <a

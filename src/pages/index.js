@@ -1,15 +1,19 @@
-import Landing from '@/components/Landing';
+import Landing from '@/components/Landing.jsx';
 import NavBar from '@/components/NavBar.jsx';
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Reviews from '@/components/Reviews.jsx';
+import Footer from '@/components/Footer';
+import Features from '@/components/Features';
+import AboutUs from '@/components/AboutUs';
 
 export default function Home() {
   return (
     <>
     <NavBar />
     <Landing />
+    <AboutUs />
+    <Features />
+    <Reviews />
+    <Footer />
     </>
   );
 }
