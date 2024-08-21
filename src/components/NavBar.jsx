@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const links = [
   {
-    to: "/#features",
-    label: "Book Now",
-  },
-  {
-    to: "/#features",
-    label: "Learn More",
+    to: "/#packages",
+    label: "Packages",
   },
   {
     to: "/#reviews",
-    label: "Reviews",
+    label: "Testimonials",
+  },
+  {
+    to: "/#templates",
+    label: "Templates",
   },
 ];
 
@@ -97,9 +97,9 @@ const Navbar = () => {
                 <span className="text-2xl font-light text-gray-900 light:text-white">
                   PHOTOHAUS.TO
                 </span>
-                <span className="font-bold text-gray-500 light:text-white">
+                {/* <span className="font-bold text-gray-500 light:text-white">
                   A modern photobooth
-                </span>
+                </span> */}
               </a>
 
               <div className="relative flex max-h-10 items-center lg:hidden">
@@ -145,11 +145,11 @@ const Navbar = () => {
                   ))}
                   <li>
                     <a
-                      href="#faqs"
+                      href="#features"
                       target="_blank"
                       className="flex gap-2 font-semibold text-gray-700 transition hover:text-primary light:text-white light:hover:text-white md:px-4"
                     >
-                      <span>Packages</span>
+                      <span>FAQ</span>
                       <span className="flex rounded-full bg-primary/20 px-1.5 py-0.5 text-xs tracking-wider text-purple-700 light:bg-white/10 light:text-orange-300">
                         new
                       </span>
