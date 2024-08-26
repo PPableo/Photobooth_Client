@@ -396,6 +396,8 @@ module.exports = {
         'monospace',
       ],
       playfair: ['"Playfair Display"', 'serif'],
+      public: ['Public', 'serif'],
+      copperplate: ['copperplate', 'sans-serif'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

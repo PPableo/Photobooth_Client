@@ -69,22 +69,21 @@ const Navbar = () => {
       <nav className="absolute z-10 w-full border-b border-black/5 light:border-white/5 lg:border-transparent">
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
           <div className="relative flex items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
-            <div className="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-              <a
+            <div className="relative z-20 flex w-full justify-end md:px-0 lg:w-max">
+              {/* <a
                 href="/#home"
                 aria-label="logo"
                 className="flex items-center space-x-2"
               >
-                    <div className="relative w-20 aspect-square">
-      <Image
-        src={"/static/logo/image00001.png"}
-        alt="logo"
-        layout="fill"
-        objectFit="contain"
-        className="absolute top-0 left-0 w-full h-full rounded-lg"
-        />
-      </div>
-                {/* <div aria-hidden="true" className="flex space-x-1">
+                <div className="relative w-20 aspect-square">
+                  <Image
+                    src={"/static/logo/image00002.png"}
+                    alt="logo"
+                    layout="fill"
+                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  />
+                </div>
+            <div aria-hidden="true" className="flex space-x-1">
                   <svg
                     className="text-red-400 w-6 h-auto fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,16 +92,16 @@ const Navbar = () => {
                     <path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z" />
                   </svg>
                   <div className="h-6 w-2 bg-primary animate-blink"></div>
-                </div> */}
-                <span className="text-2xl font-light text-gray-900 light:text-white">
+                </div>
+                 <span className="text-2xl font-light text-gray-900 light:text-white">
                   PHOTOHAUS.TO
-                </span>
-                {/* <span className="font-bold text-gray-500 light:text-white">
+                </span> 
+                 <span className="font-bold text-gray-500 light:text-white">
                   A modern photobooth
-                </span> */}
-              </a>
+                </span>
+              </a> */}
 
-              <div className="relative flex max-h-10 items-center lg:hidden">
+              <div className="relative flex max-h-12 items-center lg:hidden">
                 <button
                   aria-label="hamburger"
                   id="hamburger"
@@ -112,12 +111,12 @@ const Navbar = () => {
                   <div
                     aria-hidden="true"
                     id="line"
-                    className="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 light:bg-gray-300"
+                    className="m-auto h-1 w-5 rounded bg-white transition duration-300"
                   ></div>
                   <div
                     aria-hidden="true"
                     id="line2"
-                    className="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 light:bg-gray-300"
+                    className="m-auto mt-2 h-1 w-5 rounded bg-white transition duration-300"
                   ></div>
                 </button>
               </div>
@@ -137,7 +136,7 @@ const Navbar = () => {
                     <li key={index}>
                       <a
                         href={link.to}
-                        className="hover:text-primary block transition light:hover:text-white md:px-4"
+                        className="hover:text-white hover:background-black block transition light:hover:text-white md:px-4"
                       >
                         <span>{link.label}</span>
                       </a>
@@ -147,7 +146,7 @@ const Navbar = () => {
                     <a
                       href="#features"
                       target="_blank"
-                      className="flex gap-2 font-semibold text-gray-700 transition hover:text-primary light:text-white light:hover:text-white md:px-4"
+                      className="flex gap-2 font-semibold text-gray-700 transition hover:text-white light:text-white light:hover:text-white md:px-4"
                     >
                       <span>FAQ</span>
                       <span className="flex rounded-full bg-primary/20 px-1.5 py-0.5 text-xs tracking-wider text-purple-700 light:bg-white/10 light:text-orange-300">

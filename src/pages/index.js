@@ -6,6 +6,7 @@ import Features from '@/components/Features';
 import AboutUs from '@/components/AboutUs';
 import FeaturesSection from '@/components/FeaturesSection';
 import ContactUs from '@/components/ContactUs';
+import CTAComponent from '@/components/CTA';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <NavBar />
     <Landing />
     <AboutUs />
+    <CTAComponent />
     <FeaturesSection />
     <Features />
     <Reviews />
