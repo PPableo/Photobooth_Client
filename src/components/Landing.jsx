@@ -22,7 +22,7 @@ const Landing = () => {
         <div className="max-w-7xl pt-36 mx-auto px-6 md:px-12 xl:px-6">
           <div className="relative pt-36 ml-auto">
             <div className="lg:w-2/3 text-center mx-auto">
-              <h1 className=" tracking-widest text-white font-thin light:text-white font-copperplate text-7xl md:text-7xl xl:text-8xl">
+              <h1 className=" tracking-widest text-white font-thin light:text-white font-copperplate text-5xl md:text-7xl xl:text-7xl">
                 PHOTOHAUS{" "}
                 {/* <span className="text-white light:text-white">.TO</span> */}
               </h1>
