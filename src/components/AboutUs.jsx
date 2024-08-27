@@ -135,7 +135,7 @@ const AboutUs = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}
         className="text-center font-medium font-Public text-gray-600 max-w-2xl mb-4 mx-auto"
-      >          HI, FRIENDS, WE'RE PHOTOHAUS
+      >          WELCOME TO PHOTOHAUS
         </motion.p>
         <motion.div 
         initial={{ y: 20, opacity: 0 }}
@@ -150,12 +150,10 @@ const AboutUs = () => {
           </h2>
           <h2 className="text-4xl font-thin font-playfair italic mb-8">
             {" "}
-            Editorial, Artistic Storytelling{" "}
+            A Fun Party Favour!{" "}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            We are a team of passionate individuals dedicated to delivering
-            exceptional products and services to our clients.
-          </p>
+          Photohaus is an all-age modern photobooth. We are here to help you capture special moments to look back on.          </p>
         </motion.div>
 
         <motion.div 
@@ -201,9 +199,7 @@ const AboutUs = () => {
         <div className="my-20 text-center">
           <h3 className="text-4xl font-normal mb-4">Our Mission</h3>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            To provide innovative solutions that empower our clients and
-            contribute to their success.
-          </p>
+          To help you capture special moments and entertain your guests so that your event will be known as the party of theyear.</p>
         </div>
         {selectedImage && (
           <div

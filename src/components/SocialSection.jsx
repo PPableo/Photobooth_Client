@@ -24,7 +24,7 @@ const SocialSection = () => {
     <section className="bg-black text-white py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
-          className="text-4xl md:text-5xl font-light text-center mb-4"
+          className="text-4xl italic md:text-5xl font-light text-center mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
