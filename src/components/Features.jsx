@@ -5,10 +5,10 @@ import Image from "next/legacy/image";
 const Features = () => {
   return (
     <Container>
+              <div className="mt-20 space-y-4 px-6 md:px-0">
           <h2 className="text-left text-2xl font-light text-gray-800 light:text-white md:text-4xl" id="faqs">
             Corporate, Parties, Weddings<span className="text-primary"> Captured.</span>
           </h2>
-              <div className="mt-20 space-y-4 px-6 md:px-0">
         </div>
       <div id="features" className="my-20">
         <div className="p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">

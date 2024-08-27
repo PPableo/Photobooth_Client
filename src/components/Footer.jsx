@@ -32,7 +32,7 @@ const Footer = () => {
               </ul>
 
               <ul role="list" className="space-y-6">
-                <li>
+                {/* <li>
                   <a
                     href="https://github.com/PPableo"
                     className="flex items-center space-x-3 transition hover:text-primary"
@@ -47,7 +47,7 @@ const Footer = () => {
                     </svg>
                     <span>Github</span>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="#"
@@ -97,7 +97,7 @@ const Footer = () => {
                     <span>Facebook</span>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     className="flex items-center space-x-3 transition hover:text-primary"
@@ -112,7 +112,7 @@ const Footer = () => {
                     </svg>
                     <span>Medium</span>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://www.instagram.com/photohaus.to/"

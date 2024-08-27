@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Image from "next/legacy/image";
 import Container from "./Container";
+import { motion } from "framer-motion";
+
 
 const AboutUs = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -57,8 +59,8 @@ const AboutUs = () => {
       aspect: "video",
     },
     {
-      src: "/static/babyshower/image00005.jpeg",
-      category: "Baby Shower",
+      src: "/static/wedding/image00010.jpeg",
+      category: "Wedding",
       aspect: "square",
     },
     {
@@ -91,6 +93,26 @@ const AboutUs = () => {
       category: "Baby Shower",
       aspect: "square",
     },
+    {
+      src: "/static/wedding/image00014.jpeg",
+      category: "Wedding",
+      aspect: "video",
+    },
+    {
+      src: "/static/wedding/image00015.jpeg",
+      category: "Wedding",
+      aspect: "square",
+    },
+    {
+      src: "/static/birthday/image00013.jpeg",
+      category: "Birthday",
+      aspect: "video",
+    },
+    {
+      src: "/static/wedding/image00016.jpeg",
+      category: "Wedding",
+      aspect: "square",
+    },
   ];
 
   const openFullImage = (src) => {
@@ -102,14 +124,28 @@ const AboutUs = () => {
   };
 
   return (
-      <div className="container mx-auto px-4 py-12">
-        <p className="text-center font-medium font-Public text-gray-600 max-w-2xl mb-8 mx-auto">
-          HI, FRIENDS, WE'RE PHOTOHAUS
-        </p>
-        <div className="mb-12 text-center">
-          <h2 className="text-4xl font-normal mb-4">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="mx-auto m-10 px-4 py-12"
+    >
+      <motion.p 
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        className="text-center font-medium font-Public text-gray-600 max-w-2xl mb-4 mx-auto"
+      >          HI, FRIENDS, WE'RE PHOTOHAUS
+        </motion.p>
+        <motion.div 
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.4 }}
+        className="mb-12 text-center"
+      >
+          <h2 className="text-4xl font-playfair font-[500] mb-4">
             {" "}
-            Corporate, Parties <span className="font-Public">&</span> Wedding
+            Corporate, Parties <span className="font-public">&</span> Wedding
             Photobooth{" "}
           </h2>
           <h2 className="text-4xl font-thin font-playfair italic mb-8">
@@ -120,18 +156,23 @@ const AboutUs = () => {
             We are a team of passionate individuals dedicated to delivering
             exceptional products and services to our clients.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="">
-          <h2 className="text-center text-2xl font-light text-gray-800 light:text-white md:text-4xl mb-4">
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6, duration: 0.5 }}
+        className=""
+      >
+          {/* <h2 className="text-center text-2xl font-light text-gray-800 light:text-white md:text-4xl mb-4">
             Our Photo Gallery
           </h2>
           <h3 className="text-xl text-center mb-8">
             Capturing Life's Special Moments
-          </h3>
-          <div className="gap-8 columns-1 sm:columns-2 md:columns-3">
+          </h3> */}
+          <div className="gap-8 columns-2 sm:columns-2 md:columns-3">
             {allPhotos.map((photo, index) => (
-              <div
+              <motion.div
                 key={index}
                 className={`w-full ${
                   photo.aspect === "video" ? "aspect-video" : "aspect-square"
@@ -142,21 +183,23 @@ const AboutUs = () => {
                   src={photo.src}
                   alt={`${photo.category} photo ${index + 1}`}
                   layout="fill"
+                  width={2400}
+                  height={3600}
                   objectFit="cover"
-                  className="absolute top-0 left-0 w-full h-full rounded-none"
+                  className="absolute top-0 left-0 w-full h-full"
                   loading="lazy"
                   quality={50}
                 />
-                <div className="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded">
+                {/* <div className="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded">
                   {photo.category}
-                </div>
-              </div>
+                </div> */}
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
-        <div className="mt-12 text-center">
-          <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
+        <div className="my-20 text-center">
+          <h3 className="text-4xl font-normal mb-4">Our Mission</h3>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             To provide innovative solutions that empower our clients and
             contribute to their success.
@@ -183,7 +226,7 @@ const AboutUs = () => {
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
 
   );
 };
