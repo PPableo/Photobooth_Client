@@ -111,12 +111,12 @@ const Navbar = () => {
                   <div
                     aria-hidden="true"
                     id="line"
-                    className="m-auto h-1 w-5 rounded bg-white transition duration-300"
+                    className="m-auto h-0.5 w-10 rounded bg-white transition duration-300"
                   ></div>
                   <div
                     aria-hidden="true"
                     id="line2"
-                    className="m-auto mt-2 h-1 w-5 rounded bg-white transition duration-300"
+                    className="m-auto mt-2 h-0.5 w-10 rounded bg-white transition duration-300"
                   ></div>
                 </button>
               </div>
@@ -130,13 +130,13 @@ const Navbar = () => {
               id="navlinks"
               className="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 light:border-gray-700 light:bg-gray-800 light:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none"
             >
-              <div className="w-full text-gray-600 light:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
+              <div className="w-full text-white lg:w-auto lg:pr-4 lg:pt-0">
                 <ul className="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
                   {links.map((link, index) => (
                     <li key={index}>
                       <a
                         href={link.to}
-                        className="hover:text-white hover:background-black block transition light:hover:text-white md:px-4"
+                        className="text-secondary hover:text-white hover:background-black block transition light:hover:text-white md:px-4"
                       >
                         <span>{link.label}</span>
                       </a>
@@ -160,9 +160,9 @@ const Navbar = () => {
               <div className="mt-12 lg:mt-0">
                 <a
                   href="#"
-                  className="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                  className="relative  flex  px-6 py-3 text-lg font-semibold items-center justify-center px-6 before:absolute before:inset-0 before:rounded-none before:bg-black before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                 >
-                  <span className="relative text-sm font-semibold text-white">
+                  <span className="relative text-base font-semibold text-white ">
                     Book Now
                   </span>
                 </a>
