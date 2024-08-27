@@ -6,12 +6,12 @@ const Features = () => {
   return (
     <Container>
               <div className="mt-20 space-y-4 px-6 md:px-0">
-          <h2 className="text-left text-2xl font-light text-gray-800 light:text-white md:text-4xl" id="faqs">
-            Corporate, Parties, Weddings<span className="text-primary"> Captured.</span>
+          <h2 className="text-center text-3xl font-light text-gray-800 light:text-white md:text-4xl" id="faqs">
+            Corporate, Parties, Weddings<span className="text-gray-600 italic"> Captured.</span>
           </h2>
         </div>
       <div id="features" className="my-20">
-        <div className="p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+        <div className="p-8 border border-gray-100  bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
           <Accordion
             title={<h3 className="text-secondary text-xl py-2"> What is a photo booth?</h3>}
             answer={

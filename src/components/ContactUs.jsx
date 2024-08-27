@@ -74,11 +74,17 @@ function ContactUs({ onContactUsSubmit }) {
             {errors.ContactUsText && <p className="text-red-500 text-sm mt-1">{errors.ContactUsText}</p>}
           </div>
         </div>
+{/* 
+                  href="https://www.instagram.com/photohaus.to/"
+                  className="relative bg-white px-6 py-3 text-lg font-semibold items-center justify-center before:absolute before:inset-0 before:rounded-none before:bg-white before:transition before:duration-300 sm:w-max" */}
+
         <button
-          className="px-6 py-2 text-white bg-primary rounded-full hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition duration-300"
+          className="relative bg-black px-6 py-3 text-lg font-semibold items-center justify-center before:absolute before:inset-0 before:rounded-none before:bg-secondary before:transition before:duration-300 sm:w-ma"
           onClick={handleSubmit}
         >
-          Submit
+                  <span className="relative text-white font-semibold text-gray-600">
+                    Submit
+                  </span>
         </button>
         {errors.submit && <p className="text-red-500 text-sm mt-2">{errors.submit}</p>}
       </div>
