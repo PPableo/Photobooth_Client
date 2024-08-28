@@ -11,7 +11,7 @@ const Reviews = () => {
           </h2>
         </div>
         <div className="md:columns-2 lg:columns-4 gap-8 space-y-8">
-          <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+          <div className="aspect-auto p-8 border border-gray-100 3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
@@ -34,7 +34,7 @@ const Reviews = () => {
             <p className="mt-8">
             From the minute I messaged photohaus till the end of our wedding day they’ve been a joy to work with! They made everything very seamless and beautiful with plenty of options and details that captured us and our guests. We really appreciate the photobooth and the staff that came along with it. They even made a point to get my wife and I to the booth to make sure we used it as well and no other vendor did that! We’re so happy we found them!            </p>
           </div>
-          <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+          <div className="aspect-auto p-8 border border-gray-100 3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
@@ -58,7 +58,7 @@ const Reviews = () => {
             <p className="mt-8">
             Super happy w the services from photohaus!! They made my besties bday one to rmb for sure. On time, professional & the photos were exactly how we wanted with the templates and quality. Will definitely be using again for our next event. 🥰</p>
           </div>
-          <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+          <div className="aspect-auto p-8 border border-gray-100 3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
@@ -83,7 +83,7 @@ const Reviews = () => {
             <p className="mt-8">
             Having Photohaus at our wedding made it so much better. The service was an absolute delight! The setup was sleek and professional, and the attendant was friendly and attentive throughout the event. The variety of props that were included made it even so much better. It added a creative touch to our photos, making each snapshot memorable. The quality of the prints was exceptional, and our family and friends had a great time capturing all the moments together. If you want to elevate your event and create unforgettable moment, I highly recommend Photohaus for any event! </p>
           </div>
-          <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+          <div className="aspect-auto p-8 border border-gray-100 3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
@@ -108,7 +108,7 @@ const Reviews = () => {
             <p className="mt-8">
             Exceptional service from start to finish with Photo Haus! Their communication was outstanding, ensuring every detail was perfectly coordinated. The photos were absolutely stunning! They even added in customized props to our event which we loved. Highly recommend this team for their professionalism, clear communication, and incredible photo quality! I would definitely book them again! Thanks Photo Haus!</p>
           </div>
-          <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+          <div className="aspect-auto p-8 border border-gray-100 3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
@@ -134,7 +134,7 @@ const Reviews = () => {
             This was possibly my favourite experience for my party! Everything was set up so nicely and the pictures taken were such great quality! Even the staff that ran the booth were super friendly! Will definitely be using their services again.
             </p>
           </div>
-          <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+          <div className="aspect-auto p-8 border border-gray-100 3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
