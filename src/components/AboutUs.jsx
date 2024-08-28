@@ -205,7 +205,7 @@ const AboutUs = () => {
         <h3 className="text-4xl font-normal mb-4">Our Mission</h3>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           To help you capture special moments and entertain your guests so that
-          your event will be known as the party of theyear.
+          your event will be known as the party of the year.
         </p>
       </div>
 
