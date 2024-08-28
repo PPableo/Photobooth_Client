@@ -15,15 +15,16 @@ const Reviews = () => {
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
-                  src="/images/avatars/avatar.webp"
-                  alt="user avatar"
+                  src="/static/avatars/image00001.jpeg"
+                  alt="Brandon Client"
                   layout="fill"
                   objectFit="cover"
+                  objectPosition="center top"
                   className="rounded-full"
                   loading="lazy"
                 />
               </div>
-              <div>
+              <div className="flex items-center ">
                 <h6 className="text-lg font-medium text-gray-700 light:text-white">Brandon</h6>
                 {/* <p className="text-sm text-gray-500 light:text-gray-300">
                 Bride
@@ -37,7 +38,7 @@ const Reviews = () => {
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
-                  src="/images/avatars/avatar-1.webp"
+                  src="/static/avatars/image00003.jpeg"
                   alt="user avatar"
                   layout="fill"
                   objectFit="cover"
@@ -45,7 +46,7 @@ const Reviews = () => {
                   loading="lazy"
                 />
               </div>
-              <div>
+              <div className="flex items-center ">
                 <h6 className="text-lg font-medium text-gray-700 light:text-white">
                 Cathy
                 </h6>
@@ -61,7 +62,7 @@ const Reviews = () => {
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
-                  src="/images/avatars/avatar-2.webp"
+                  src="/static/avatars/image00026.jpeg"
                   alt="user avatar"
                   layout="fill"
                   objectFit="cover"
@@ -69,7 +70,8 @@ const Reviews = () => {
                   loading="lazy"
                 />
               </div>
-              <div>
+                            <div className="flex items-center ">
+
                 <h6 className="text-lg font-medium text-gray-700 light:text-white">
                 Anderson
                 </h6>
@@ -85,7 +87,7 @@ const Reviews = () => {
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
-                  src="/images/avatars/avatar-3.webp"
+                  src="/static/avatars/image00027.jpeg"
                   alt="user avatar"
                   layout="fill"
                   objectFit="cover"
@@ -93,7 +95,8 @@ const Reviews = () => {
                   loading="lazy"
                 />
               </div>
-              <div>
+                            <div className="flex items-center ">
+
                 <h6 className="text-lg font-medium text-gray-700 light:text-white">
                 Chantal
                 </h6>
@@ -109,7 +112,7 @@ const Reviews = () => {
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
-                  src="/images/avatars/avatar-4.webp"
+                  src="/static/avatars/image00002.jpeg"
                   alt="user avatar"
                   layout="fill"
                   objectFit="cover"
@@ -117,7 +120,8 @@ const Reviews = () => {
                   loading="lazy"
                 />
               </div>
-              <div>
+                            <div className="flex items-center ">
+
                 <h6 className="text-lg font-medium text-gray-700 light:text-white">
                 Jen
                 </h6>
@@ -134,7 +138,7 @@ const Reviews = () => {
             <div className="flex gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden">
                 <Image
-                  src="/images/avatars/avatar.webp"
+                  src="/static/avatars/image00025.jpeg"
                   alt="user avatar"
                   layout="fill"
                   objectFit="cover"
@@ -142,7 +146,7 @@ const Reviews = () => {
                   loading="lazy"
                 />
               </div>
-              <div>
+              <div className="flex items-center">
                 <h6 className="text-lg font-medium text-gray-700 light:text-white">
                 Julia
                 </h6>

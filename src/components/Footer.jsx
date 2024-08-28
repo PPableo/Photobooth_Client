@@ -2,8 +2,8 @@ import Container from "./Container";
 
 const Footer = () => {
   return (
-      <Container>
-    <footer className="py-10 md:py-20">
+    <Container>
+      <footer className="py-10 md:py-20">
         <div className="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
           <div className="flex flex-wrap items-center justify-between md:flex-nowrap">
             <div className="flex w-full justify-center space-x-12 text-gray-600 dark:text-gray-300 sm:w-7/12 md:justify-start">
@@ -48,7 +48,7 @@ const Footer = () => {
                     <span>Github</span>
                   </a>
                 </li> */}
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     className="flex items-center space-x-3 transition hover:text-primary"
@@ -96,7 +96,7 @@ const Footer = () => {
                     </svg>
                     <span>Facebook</span>
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                   <a
                     href="#"
@@ -163,8 +163,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-    </footer>
-      </Container>
+      </footer>
+    </Container>
   );
 };
 

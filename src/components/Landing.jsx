@@ -75,6 +75,7 @@ const Landing = () => {
                     Learn more
                   </span>
                 </motion.a>
+                
               </motion.div>
             </div>
           </div>

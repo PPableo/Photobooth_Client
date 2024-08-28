@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 const links = [
   {
@@ -9,6 +8,10 @@ const links = [
   {
     to: "/#reviews",
     label: "Testimonials",
+  },
+  {
+    to: "/gallery",
+    label: "Gallery",
   },
   {
     to: "/#templates",
@@ -128,7 +131,7 @@ const Navbar = () => {
             ></div>
             <div
               id="navlinks"
-              className="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 light:border-gray-700 light:bg-gray-800 light:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none"
+              className="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-secondary p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 light:border-gray-700 light:bg-gray-800 light:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none"
             >
               <div className="w-full text-white lg:w-auto lg:pr-4 lg:pt-0">
                 <ul className="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
@@ -136,7 +139,7 @@ const Navbar = () => {
                     <li key={index}>
                       <a
                         href={link.to}
-                        className="text-secondary hover:text-white hover:background-black block transition light:hover:text-white md:px-4"
+                        className="text-white hover:text-primary font-gothic hover:background-black block transition light:hover:text-white md:px-4"
                       >
                         <span>{link.label}</span>
                       </a>
@@ -146,9 +149,9 @@ const Navbar = () => {
                     <a
                       href="#features"
                       target="_blank"
-                      className="flex gap-2 font-semibold text-gray-700 transition hover:text-white light:text-white light:hover:text-white md:px-4"
+                      className="flex gap-2 font-semibold text-white transition hover:text-white light:text-white light:hover:text-white md:px-4"
                     >
-                      <span>FAQ</span>
+                      <span className="hover:text-primary">FAQS</span>
                       <span className="flex rounded-full bg-primary/20 px-1.5 py-0.5 text-xs tracking-wider text-purple-700 light:bg-white/10 light:text-orange-300">
                         new
                       </span>
@@ -160,9 +163,9 @@ const Navbar = () => {
               <div className="mt-12 lg:mt-0">
                 <a
                   href="#"
-                  className="relative  flex  px-6 py-3 text-lg font-semibold items-center justify-center px-6 before:absolute before:inset-0 before:rounded-none before:bg-black before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                  className="relative  flex  px-6 py-3 text-lg font-semibold items-center justify-center px-6 before:absolute before:inset-0 before:rounded-none before:bg-white hover:bg-black before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                 >
-                  <span className="relative text-base font-semibold text-white ">
+                  <span className="relative hover:text-black  text-black font-semibold text-white ">
                     Book Now
                   </span>
                 </a>
