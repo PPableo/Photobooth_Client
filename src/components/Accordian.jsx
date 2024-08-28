@@ -41,7 +41,7 @@ const Accordion = ({ title, answer }) => {
           accordionOpen ? "max-h-screen" : "max-h-0"
         }`}
       >
-        <div className="my-4 p-4 border border-gray-100 rounded-3xl bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+        <div className="my-4 p-4 border border-gray-100 rounded-none bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
           {answer}
         </div>
       </div>

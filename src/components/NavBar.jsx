@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const links = [
   {
-    to: "/#packages",
+    to: "/packages",
     label: "Packages",
   },
   {
@@ -14,7 +14,7 @@ const links = [
     label: "Gallery",
   },
   {
-    to: "/#templates",
+    to: "/templates",
     label: "Templates",
   },
 ];
@@ -149,7 +149,7 @@ const Navbar = () => {
                     <a
                       href="#features"
                       target="_blank"
-                      className="flex gap-2 font-semibold text-white transition hover:text-white light:text-white light:hover:text-white md:px-4"
+                      className="flex gap-2 font-semibold text-white transition hover:text-white hover:text-white md:px-4"
                     >
                       <span className="hover:text-primary">FAQS</span>
                       <span className="flex rounded-full bg-primary/20 px-1.5 py-0.5 text-xs tracking-wider text-purple-700 light:bg-white/10 light:text-orange-300">

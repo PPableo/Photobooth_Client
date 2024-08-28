@@ -4,7 +4,6 @@ import Reviews from '@/components/Reviews.jsx';
 import Footer from '@/components/Footer';
 import Features from '@/components/Features';
 import AboutUs from '@/components/AboutUs';
-import FeaturesSection from '@/components/FeaturesSection';
 import ContactUs from '@/components/ContactUs';
 import CTAComponent from '@/components/CTA';
 import SocialSection from '@/components/SocialSection';
@@ -17,7 +16,6 @@ export default function Home() {
     <AboutUs />
     <CTAComponent />
     <SocialSection />
-    {/* <FeaturesSection /> */}
     <Features />
     <Reviews />
     <ContactUs />
