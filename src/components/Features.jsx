@@ -11,7 +11,7 @@ const Features = () => {
           </h2>
         </div>
       <div id="features" className="my-20">
-        <div className="p-8 border border-gray-100  bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
+        <div className="p-8 border border-gray-100 text-left bg-white light:bg-gray-800 light:border-gray-700 shadow-2xl shadow-gray-600/10 light:shadow-none">
           <Accordion
             title={<h3 className="text-secondary text-xl py-2"> What is a photo booth?</h3>}
             answer={
