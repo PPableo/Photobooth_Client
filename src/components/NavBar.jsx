@@ -165,7 +165,7 @@ const Navbar = () => {
                   href="#"
                   className="relative  flex  px-6 py-3 text-lg font-semibold items-center justify-center px-6 before:absolute before:inset-0 before:rounded-none before:bg-white hover:bg-black before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                 >
-                  <span className="relative hover:text-black  text-black font-semibold text-white ">
+                  <span className="relative hover:text-black  text-black font-semibold ">
                     Book Now
                   </span>
                 </a>
