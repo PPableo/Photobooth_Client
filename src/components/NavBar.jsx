@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 
 const links = [
   {
+    to: "/",
+    label: "Home",
+  },
+  {
     to: "/packages",
     label: "Packages",
   },
@@ -69,7 +73,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="absolute z-10 w-full border-b border-black/5 light:border-white/5 lg:border-transparent">
+      <nav className="fixed bg-[#505050] z-10 w-full border-b border-black/5 light:border-white/5 lg:border-transparent">
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
           <div className="relative flex items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
             <div className="relative z-20 flex w-full justify-end md:px-0 lg:w-max">
@@ -145,7 +149,7 @@ const Navbar = () => {
                       </a>
                     </li>
                   ))}
-                  <li>
+                  {/* <li>
                     <a
                       href="#features"
                       target="_blank"
@@ -156,7 +160,7 @@ const Navbar = () => {
                         new
                       </span>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
@@ -165,7 +169,7 @@ const Navbar = () => {
                   href="#"
                   className="relative  flex  px-6 py-3 text-lg font-semibold items-center justify-center px-6 before:absolute before:inset-0 before:rounded-none before:bg-white hover:bg-black before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                 >
-                  <span className="relative hover:text-black  text-black font-semibold text-white ">
+                  <span className="relative hover:text-black  text-black font-semibold text-secondary ">
                     Book Now
                   </span>
                 </a>

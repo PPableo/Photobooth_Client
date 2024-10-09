@@ -21,7 +21,7 @@ const SocialSection = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-16 px-4 md:px-8 lg:px-16">
+    <section className="bg-[#505050] text-white py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           className="text-4xl italic md:text-5xl font-light text-center mb-4"
