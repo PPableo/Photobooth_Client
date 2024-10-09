@@ -162,8 +162,7 @@ const AboutUs = () => {
           A Fun Party Favour!{" "}
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-          Photohaus is an all-age modern photobooth. We are here to help you
-          capture special moments to look back on.{" "}
+        Photohaus is an all-age modern photobooth. We are here to help you capture special moments to look back on with friends and family.{" "}
         </p>
       </motion.div>
       <motion.div

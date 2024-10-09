@@ -21,10 +21,22 @@ const Templates = () => {
     "/static/templates/image00011.jpeg",
     "/static/templates/image00012.jpeg",
     "/static/templates/image00013.jpeg",
+    "/static/templates/image00014.jpeg",
+    "/static/templates/image00015.jpeg",
+    "/static/templates/image00016.jpeg",
+    "/static/templates/image00017.jpeg",
+    "/static/templates/image00018.jpeg",
+    "/static/templates/image00019.jpeg",
+    "/static/templates/image00020.jpeg",
+    "/static/templates/image00021.jpeg",
+    "/static/templates/image00022.jpeg",
+    "/static/templates/image00024.jpeg",
+    // "/static/templates/image00025.jpeg",
+    // "/static/templates/image00026.jpeg",
   ];
 
   const categories = [
-    { name: "Templates", photos: Templates },
+    { name: "Strip Templates", photos: Templates },
   ];
 
   const openModal = (image, category) => {
@@ -84,7 +96,7 @@ const Templates = () => {
                 {category.name}
               </h2>
               <h3 className="text-2xl font-playfair italic text-center mb-8">
-                {category.name === "Templates" &&
+                {category.name === "Strip Templates" &&
                   "Customize for Any Event"}
               </h3>
               <div className="mb-10 grid grid-cols-2 md:grid-cols-3 gap-4">

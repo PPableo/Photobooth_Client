@@ -19,7 +19,7 @@ const Landing = () => {
         className="absolute inset-0 grid grid-cols-2-space-x-52"
       >
         <Image
-          src="/static/background2.jpg"
+          src="/static/background2.jpeg"
           alt="Background"
           layout="fill"
           objectFit="cover"

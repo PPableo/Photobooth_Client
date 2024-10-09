@@ -6,6 +6,7 @@ import Container from "./Container";
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentCategory, setCurrentCategory] = useState(null);
+  const [expandedCategories, setExpandedCategories] = useState({});
 
   const weddingPhotos = [
     "/static/wedding/image00001.jpeg",
@@ -29,6 +30,15 @@ const GalleryPage = () => {
     "/static/birthday/image00007.jpeg",
     "/static/birthday/image00008.jpeg",
     "/static/birthday/image00009.jpeg",
+    "/static/birthday/image00010.jpeg",
+    "/static/birthday/image00012.jpeg",
+    "/static/birthday/image00013.jpeg",
+    "/static/birthday/image00014.jpeg",
+    "/static/birthday/image00015.jpeg",
+    "/static/birthday/image00016.jpeg",
+    "/static/birthday/image00017.jpeg",
+    "/static/birthday/image00018.jpeg",
+    "/static/birthday/image00019.jpeg",
   ];
 
   const babyShowerPhotos = [
@@ -36,17 +46,54 @@ const GalleryPage = () => {
     "/static/babyshower/image00002.jpeg",
     "/static/babyshower/image00003.jpeg",
     "/static/babyshower/image00004.jpeg",
-    "/static/babyshower/image00005.jpeg",
-    "/static/babyshower/image00006.jpeg",
-    "/static/babyshower/image00007.jpeg",
-    "/static/babyshower/image00008.jpeg",
-    "/static/babyshower/image00009.jpeg",
+    // "/static/babyshower/image00005.jpeg",
+    // "/static/babyshower/image00006.jpeg",
+    // "/static/babyshower/image00007.jpeg",
+    // "/static/babyshower/image00008.jpeg",
+    // "/static/babyshower/image00009.jpeg",
+  ];
+
+  const bridalPhotos = [
+    "/static/bridal/image00001.jpeg",
+    "/static/bridal/image00002.jpeg",
+    "/static/bridal/image00003.jpeg",
+    "/static/bridal/image00004.jpeg",
+    "/static/bridal/image00005.jpeg",
+    "/static/bridal/image00006.jpeg",
+    "/static/bridal/image00007.jpeg",
+    "/static/bridal/image00008.jpeg",
+    "/static/bridal/image00017.jpeg",
+    "/static/bridal/image00018.jpeg",
+    "/static/bridal/image00019.jpeg",
+    "/static/bridal/image00020.jpeg",
+    "/static/bridal/image00021.jpeg",
+    "/static/bridal/image00022.jpeg",
+    "/static/bridal/image00023.jpeg",
+    "/static/bridal/image00024.jpeg",
+    "/static/bridal/image00025.jpeg",
+    "/static/bridal/image00026.jpeg",
+    "/static/bridal/image00027.jpeg",
+    "/static/bridal/image00028.jpeg",
+  ];
+
+  const corporatePhotos = [
+    "/static/corporate/image00001.jpeg",
+    "/static/corporate/image00002.jpeg",
+    "/static/corporate/image00003.jpeg",
+    "/static/corporate/image00004.jpeg",
+    "/static/corporate/image00005.jpeg",
+    // "/static/corporate/image00006.jpeg",
+    // "/static/corporate/image00007.jpeg",
+    // "/static/corporate/image00008.jpeg",
+    // "/static/corporate/image00009.jpeg",
   ];
 
   const categories = [
     { name: "Weddings", photos: weddingPhotos },
     { name: "Birthdays", photos: birthdayPhotos },
     { name: "Baby Showers", photos: babyShowerPhotos },
+    { name: "Bridal Showers", photos: bridalPhotos },
+    { name: "Corporate", photos: corporatePhotos },
   ];
 
   const openModal = (image, category) => {
@@ -65,6 +112,13 @@ const GalleryPage = () => {
       (currentIndex + direction + currentCategory.photos.length) %
       currentCategory.photos.length;
     setSelectedImage(currentCategory.photos[newIndex]);
+  };
+
+  const toggleExpand = (categoryName) => {
+    setExpandedCategories((prev) => ({
+      ...prev,
+      [categoryName]: !prev[categoryName],
+    }));
   };
 
   return (
@@ -94,48 +148,69 @@ const GalleryPage = () => {
 
       <Container>
         <div className="mt-20">
-          {categories.map((category, categoryIndex) => (
-            <motion.div
-              key={category.name}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: categoryIndex * 0.2, duration: 0.8 }}
-              className="mb-50"
-            >
-              <h2 className="text-center text-4xl font-light text-gray-800 light:text-white md:text-4xl mb-2">
-                {category.name}
-              </h2>
-              <h3 className="text-2xl font-playfair italic text-center mb-8">
-                {category.name === "Weddings" &&
-                  "Capture the Moments of Your Special Day"}
-                {category.name === "Birthdays" &&
-                  "Celebrate with Fun and Memorable Captures"}
-                {category.name === "Baby Showers" &&
-                  "Celebrate the Arrival of a New Life"}
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {category.photos.map((photo, index) => (
-                  <motion.div
-                    key={index}
-                    className="aspect-[4/4] relative cursor-pointer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => openModal(photo, category)}
-                  >
-                    <Image
-                      src={photo}
-                      alt={`${category.name} photo ${index + 1}`}
-                      layout="fill"
-                      objectFit="contain"
-                      className="rounded-none"
-                      loading="lazy"
-                      quality={50}
-                    />
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+          {categories.map((category, categoryIndex) => {
+            const isExpanded = expandedCategories[category.name];
+            const displayPhotos = isExpanded
+              ? category.photos
+              : category.photos.slice(0, 9);
+
+            return (
+              <motion.div
+                key={category.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: categoryIndex * 0.2, duration: 0.8 }}
+                className="mb-50"
+              >
+                <h2 className="text-center text-4xl font-light text-gray-800 light:text-white md:text-4xl mb-2">
+                  {category.name}
+                </h2>
+                <h3 className="text-2xl font-playfair italic text-center mb-8">
+                  {category.name === "Weddings" &&
+                    "Capture the moments of your special day"}
+                  {category.name === "Birthdays" &&
+                    "Celebrate with fun and memorable captures"}
+                  {category.name === "Baby Showers" &&
+                    "Celebrate the Arrival of a New Life"}
+                  {category.name === "Bridal Showers" &&
+                    "Celebrate a new milestone with your favorite people"}
+                  {category.name === "Corporate" &&
+                    "Celebrate achievements and work anniversaries with your team"}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {displayPhotos.map((photo, index) => (
+                    <motion.div
+                      key={index}
+                      className="aspect-[4/4] relative cursor-pointer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => openModal(photo, category)}
+                    >
+                      <Image
+                        src={photo}
+                        alt={`${category.name} photo ${index + 1}`}
+                        layout="fill"
+                        objectFit="contain"
+                        className="rounded-none"
+                        loading="lazy"
+                        quality={50}
+                      />
+                    </motion.div>
+                  ))}
+                </div>
+                {category.photos.length > 9 && (
+                  <div className="text-center mb-10 p-4">
+                    <button
+                      onClick={() => toggleExpand(category.name)}
+                      className="bg-primary text-white px-4 py-2 rounded hover:bg-opacity-80 transition-colors"
+                    >
+                      {isExpanded ? "Show Less" : "Show More"}
+                    </button>
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
       </Container>
 

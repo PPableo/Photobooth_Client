@@ -1,29 +1,43 @@
-  import React from "react";
-  import { motion } from "framer-motion";
-  
-  const PackageCard = ({ icon, title, description, price, services }) => (
-    <motion.div
-      className="w-full px-4 md:w-1/3 lg:w-1/3"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="mb-9 bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
-        <div className="mx-auto fill-white bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-center">
-          {icon}
-        </div>
-        <h4 className="text-dark mb-4 text-2xl font-semibold">{title}</h4>
-        <p className="mt-4 text-gray-700 light:text-gray-300 text-xl">{description}</p>
-        <p className="mt-4 text-secondary text-2xl font-bold">{price}</p>
-        <ul className="mt-4 text-gray-700 light:text-gray-300 text-lg">
-          {services.map((service, index) => (
-            <li key={index} className="mb-2">• {service}</li>
-          ))}
-        </ul>
-      </div>
-    </motion.div>
+import React from "react";
+import { motion } from "framer-motion";
+
+const boldKeywords = (text, keywords) => {
+  const regex = new RegExp(`(${keywords.join('|')})`, 'gi');
+  return text.split(regex).map((part, index) => 
+    part && keywords.includes(part.toLowerCase()) ? <strong key={index}>{part}</strong> : part
   );
-  
+};
+
+const PackageCard = ({ icon, title, description, price, services }) => (
+  <motion.div
+    className="w-full px-4 md:w-1/3 lg:w-1/3"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+  >
+    <div className="mb-9 bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
+      <div className="mx-auto fill-white bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-center">
+        {icon}
+      </div>
+      <h4 className="text-dark mb-4 text-2xl font-semibold">{title}</h4>
+      <p className="mt-4 text-gray-700 light:text-gray-300 text-xl">{description}</p>
+      <p className="mt-4 text-secondary text-2xl font-bold">{price}</p>
+      <ul className="mt-4 text-gray-700 light:text-gray-300 text-lg">
+        {services.map((service, index) => (
+          <li key={index} className="mb-2">• {boldKeywords(service, [
+            'Unlimited strips (2x6") print + GIFS + online gallery',
+            '3 template revisions',
+            'postcards (4x6)',
+            '4 template revisions',
+            'black/white',
+            'glam',
+            'print'
+          ])}</li>
+        ))}
+      </ul>
+    </div>
+  </motion.div>
+);
   const PackagesSection = () => {
     const packages = [
       {
@@ -45,11 +59,10 @@
         ),
         title: "Digital",
         description: "Capture and share digital memories",
-        price: "$125/HR",
+        // price: "$125/HR",
         services: [
-          "Digital 2x6 or 4x6 photos (no prints)",
-          "Online gallery",
-          "Custom template + 2 template revisions",
+          "Digital 2x6 or 4x6 photos + online gallery",
+          "Custom template + 2 template revision",
           "White backdrop (8x8ft)",
           "Preset start screen",
           "Colour print only",
@@ -82,12 +95,12 @@
         ),
         title: "Signature",
         description: "Our classic photobooth experience",
-        price: "$155/HR",
+        // price: "$155/HR",
         services: [
-          'Strip (2x6") print + GIFS + online gallery',
+          'Unlimited strips (2x6”) print + GIFS + online gallery',
           "Custom template + 3 template revisions",
           "White backdrop (8x8ft)",
-          "Custom start screen",
+          "Preset start screen",
           "Colour print only",
           "Props (sunglasses and headbands)",
           "Booth attendant",
@@ -123,15 +136,14 @@
         ),
         title: "Premium",
         description: "The ultimate photobooth package",
-        price: "$185/HR",
+        // price: "$185/HR",
         services: [
-          'Strips (2x6") print or postcards (4x6) + GIFS + online gallery',
+          'Unlimited strips (2x6”) print or postcards (4x6) + GIFS + online gallery',
           "Custom template + 4 template revisions",
           "White backdrop (8x8ft)",
           "Custom start screen",
-          "Colour or black/white GLAM print",
+          "Colour and/or black/white GLAM print",
           "Props (sunglasses and headbands)",
-          "2 custom props",
           "Booth attendant",
           "Instantly share via email or text",
         ],
