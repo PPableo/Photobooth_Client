@@ -171,7 +171,7 @@ const GalleryPage = () => {
                   {category.name === "Birthdays" &&
                     "Celebrate with fun and memorable captures"}
                   {category.name === "Baby Showers" &&
-                    "Celebrate the Arrival of a New Life"}
+                    "Celebrate the arrival of a new life"}
                   {category.name === "Bridal Showers" &&
                     "Celebrate a new milestone with your favorite people"}
                   {category.name === "Corporate" &&
@@ -202,7 +202,7 @@ const GalleryPage = () => {
                   <div className="text-center mb-10 p-4">
                     <button
                       onClick={() => toggleExpand(category.name)}
-                      className="bg-primary text-white px-4 py-2 rounded hover:bg-opacity-80 transition-colors"
+                      className="bg-primary text-[#505050] px-4 py-2 rounded hover:bg-opacity-80 transition-colors"
                     >
                       {isExpanded ? "Show Less" : "Show More"}
                     </button>
