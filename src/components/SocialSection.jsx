@@ -21,7 +21,7 @@ const SocialSection = () => {
   ];
 
   return (
-    <section className="bg-[#505050] text-white py-16 px-4 md:px-8 lg:px-16">
+    <section className="bg-[#FFE3E8] text-[#505050] py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto">
         <motion.h2 
           className="text-4xl italic md:text-5xl font-light text-center mb-4"
@@ -42,7 +42,7 @@ const SocialSection = () => {
           our different inspirations. You've come to the right place.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {socialPlatforms.map((platform, index) => (
             <motion.div 
               key={platform.name}
@@ -63,7 +63,7 @@ const SocialSection = () => {
               </motion.a>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

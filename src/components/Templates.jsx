@@ -36,7 +36,7 @@ const Templates = () => {
   ];
 
   const categories = [
-    { name: "Strip Templates", photos: Templates },
+    { name: "Postcard Templates", photos: Templates },
   ];
 
   const openModal = (image, category) => {

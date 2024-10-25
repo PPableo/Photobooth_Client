@@ -14,7 +14,7 @@ export default function Home() {
     <NavBar />
     <Landing />
     <AboutUs />
-    <CTAComponent />
+    {/* <CTAComponent /> */}
     <SocialSection />
     <Features />
     <Reviews />

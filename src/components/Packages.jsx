@@ -24,9 +24,11 @@ const PackageCard = ({ icon, title, description, price, services }) => (
       <p className="mt-4 text-secondary text-2xl font-bold">{price}</p>
       <ul className="mt-4 text-gray-700 light:text-gray-300 text-lg">
         {services.map((service, index) => (
-          <li key={index} className="mb-2">• {boldKeywords(service, [
+          <li key={index} className="strong mb-2">• {boldKeywords(service, [
             'Unlimited strips (2x6") print + GIFS + online gallery',
+            'Unlimited strips',
             '3 template revisions',
+            '(4x6)',
             'postcards (4x6)',
             '4 template revisions',
             'black/white',
@@ -65,7 +67,7 @@ const PackageCard = ({ icon, title, description, price, services }) => (
           "Custom template + 2 template revision",
           "White backdrop (8x8ft)",
           "Preset start screen",
-          "Colour print only",
+          "Colour only",
           "Props (sunglasses and headbands)",
           "Booth attendant",
           "Instantly share via email or text",
@@ -101,7 +103,7 @@ const PackageCard = ({ icon, title, description, price, services }) => (
           "Custom template + 3 template revisions",
           "White backdrop (8x8ft)",
           "Preset start screen",
-          "Colour print only",
+          "Colour only",
           "Props (sunglasses and headbands)",
           "Booth attendant",
           "Instantly share via email or text",
@@ -124,8 +126,8 @@ const PackageCard = ({ icon, title, description, price, services }) => (
             {" "}
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>{" "}
             <path
               fillRule="evenodd"
