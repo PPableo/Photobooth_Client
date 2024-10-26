@@ -217,9 +217,10 @@ const PackagesSection = () => {
               Capture memories with our tailored photobooth experiences
             </p>
           </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
           <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
             {/* Digital Package */}
-
             <h2 className="text-2xl font-bold text-center py-8">
               Digital Package
             </h2>
@@ -286,15 +287,18 @@ const PackagesSection = () => {
               Our classic photobooth experience
             </p>
             <div className="text-center font-medium">
-              <p className="py-2 border-b mx-8 mt-8">
-                3 hours photo booth rental
+              <p className="py-2 border-b mx-8 mt-8 font-bold">
+              Unlimited strips (2x6”) print + GIFS + online gallery
               </p>
-              <p className="py-2 border-b mx-8 font-bold">
-                Unlimited strips (2x6") print + GIFS + online gallery
+              <p className="py-2 border-b mx-8">
+              Custom template + 3 template revisions
               </p>
-              <p className="py-2 border-b mx-8">Props included</p>
-              <p className="py-2 border-b mx-8">Setup & delivery included</p>
-              <p className="py-2 border-b mx-8">Personalized template design</p>
+              <p className="py-2 border-b mx-8">White backdrop (8x8ft)</p>
+              <p className="py-2 border-b mx-8">Preset start screen</p>
+              <p className="py-2 border-b mx-8">Colour only</p>
+              <p className="py-2 border-b mx-8">Props (sunglasses and headbands)</p>
+              <p className="py-2 border-b mx-8">Booth attendant</p>
+              <p className="py-2 border-b mx-8">Instantly share via email or text</p>
             </div>
             <button className="bg-primary text-[#505050] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3">
               Book Now
@@ -357,7 +361,7 @@ const PackagesSection = () => {
               Book Now
             </button>
           </div>
-
+          </div>
           {/* <div className="-mx-4 flex flex-wrap">
               {packages.map((pkg, index) => (
                 <PackageCard key={index} {...pkg} />
