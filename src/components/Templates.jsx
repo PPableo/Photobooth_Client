@@ -19,8 +19,6 @@ const Templates = () => {
     "/static/templates/image00009.jpeg",
     "/static/templates/image00010.jpeg",
     "/static/templates/image00011.jpeg",
-    "/static/templates/image00012.jpeg",
-    "/static/templates/image00013.jpeg",
     // "/static/templates/image00025.jpeg",
     // "/static/templates/image00026.jpeg",
   ];
